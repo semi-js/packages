@@ -1,6 +1,6 @@
 {
   "name": "__NAME__",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "description": "The __NAME__ package of the semi-js framework.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,10 +15,10 @@
     "singleQuote": false
   },
   "scripts": {
-    "build": "npm run format:src && rimraf dist && tsc",
+    "build": "npm run format && rimraf dist && tsc",
     "format": "prettier --write --config ./package.json src",
     "init": "node init.js",
-    "prepublishOnly": "npm run build:full",
+    "prepublishOnly": "npm run build",
     "start": "ts-node src/index.ts"
   },
   "devDependencies": {

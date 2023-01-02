@@ -13,7 +13,7 @@
     "singleQuote": false
   },
   "scripts": {
-    "build": "npm run format:src && rimraf dist && tsc",
+    "build": "npm run format && rimraf dist && tsc",
     "format": "prettier --write --config ./package.json src",
     "start": "ts-node src/index.ts"
   },
