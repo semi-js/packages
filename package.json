@@ -1,0 +1,11 @@
+{
+  "name": "semi-js",
+  "description": "All packages of the semi-js framework.",
+  "repository": "https://github.com/semi-js/packages.git",
+  "author": "Laurenz1606 <laurenz1606 <laurenz.rausche@gmail.com>>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "create:package": "node helpers/create-package.js"
+  }
+}
