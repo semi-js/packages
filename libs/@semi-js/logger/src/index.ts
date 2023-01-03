@@ -1,13 +1,4 @@
-import {
-  bold,
-  cyan,
-  gray,
-  green,
-  magenta,
-  red,
-  white,
-  yellowBright,
-} from "chalk";
+import { bold, cyan, gray, green, magenta, red, yellowBright } from "chalk";
 import { date, time } from "./utils/current";
 import { low, up } from "./utils/strings";
 
