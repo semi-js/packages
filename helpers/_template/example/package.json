@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "__NAME__-example(s)",
   "description": "The example(s) for the __NAME__ package of the semi-js framework.",
   "main": "dist/index.js",
   "repository": "https://github.com/semi-framework/packages.git",

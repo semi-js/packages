@@ -19,7 +19,7 @@ const installCommand = usesYarn ? "yarn install" : "npm install";
 const packageName = process.argv[2].toLowerCase();
 
 //get root path of package
-const packagePath = path.join(__dirname, "..", packageName);
+const packagePath = path.join(__dirname, "..", "libs", packageName);
 
 //get example path of package
 const examplePath = path.join(packagePath, "example");
@@ -28,7 +28,7 @@ const examplePath = path.join(packagePath, "example");
 const templatePath = path.join(__dirname, "_template");
 
 //create new folder
-fs.mkdirSync(packagePath);
+fs.mkdirSync(packagePath, { recursive: true });
 
 //copy files from template
 fs.cpSync(templatePath, packagePath, { recursive: true });
@@ -37,7 +37,9 @@ fs.cpSync(templatePath, packagePath, { recursive: true });
 replace.sync({
   files: [
     path.join(packagePath, "package.json"),
+    path.join(packagePath, "README.md"),
     path.join(examplePath, "package.json"),
+    path.join(examplePath, "README.md"),
   ],
   from: /__NAME__/g,
   to: packageName,
