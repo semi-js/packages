@@ -1,0 +1,1 @@
+import {} from "../../dist" //replace with "@semi-js/logger"
