@@ -40,6 +40,7 @@ replace.sync({
     path.join(packagePath, "README.md"),
     path.join(examplePath, "package.json"),
     path.join(examplePath, "README.md"),
+    path.join(examplePath, "src", "index.ts"),
   ],
   from: /__NAME__/g,
   to: packageName,

@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npm run format && rimraf dist && tsc",
     "format": "prettier --write --config ./package.json src",
-    "start": "ts-node src/index.ts"
+    "start": "cd .. && yarn build && cd example && ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^18.11.17",

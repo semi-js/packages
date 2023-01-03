@@ -1,0 +1,1 @@
+import {} from "../../dist" //replace with "__NAME__"
